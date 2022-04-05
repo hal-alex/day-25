@@ -21,9 +21,9 @@
 #
 # print(temperatures)
 
-import pandas
-
-data = pandas.read_csv("weather_data.csv")
+# import pandas
+#
+# data = pandas.read_csv("weather_data.csv")
 #
 # data_dict = data.to_dict()
 # print(data_dict)
@@ -41,12 +41,12 @@ data = pandas.read_csv("weather_data.csv")
 
 #creating dataframe from lists
 
-data_dict = {
-    "students": ["Amy", "Alex", "Angela"],
-    "scores": [76, 56, 65]
-
-}
-
-data_names = pandas.DataFrame(data_dict)
-
-data_names.to_csv("new_names.csv")
+# data_dict = {
+#     "students": ["Amy", "Alex", "Angela"],
+#     "scores": [76, 56, 65]
+#
+# }
+#
+# data_names = pandas.DataFrame(data_dict)
+#
+# data_names.to_csv("new_names.csv")
