@@ -50,3 +50,21 @@
 # data_names = pandas.DataFrame(data_dict)
 #
 # data_names.to_csv("new_names.csv")
+
+import pandas
+
+task_data = pandas.read_csv("2018_Central_Park_Squirrel_Census_-_Squirrel_Data.csv")
+
+grey_s = len(task_data[task_data["Primary Fur Color"] == "Gray"])
+red_s = len(task_data[task_data["Primary Fur Color"] == "Cinnamon"])
+black_s = len(task_data[task_data["Primary Fur Color"] == "Black"])
+
+data_dict = {
+    "Fur Color": ["Gray", "Cinnamon", "Black"],
+    "Count": [grey_s, red_s, black_s]
+}
+
+data_frame = pandas.DataFrame(data_dict)
+data_frame.to_csv("squirrel_count.csv")
+
+
