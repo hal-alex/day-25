@@ -24,4 +24,29 @@
 import pandas
 
 data = pandas.read_csv("weather_data.csv")
-print(data["temp"])
+#
+# data_dict = data.to_dict()
+# print(data_dict)
+#
+# temp_list = data["temp"].to_list()
+# print(temp_list)
+#
+# max_temp = data["temp"].max()
+#
+# print(data[data.temp == max_temp])
+
+# monday = data[data.day == "Monday"]
+# monday_temp = monday.temp * 2 + 30
+# print(monday_temp)
+
+#creating dataframe from lists
+
+data_dict = {
+    "students": ["Amy", "Alex", "Angela"],
+    "scores": [76, 56, 65]
+
+}
+
+data_names = pandas.DataFrame(data_dict)
+
+data_names.to_csv("new_names.csv")
